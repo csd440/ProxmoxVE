@@ -23,6 +23,8 @@ msg_ok "Cloned ${APP} Repository"
 
 msg_info "Running ${APP} Installer"
 cd /opt/proxmigrate-src || exit
+export PROXMIGRATE_ADMIN_USER="admin"
+export PROXMIGRATE_ADMIN_PASS="Password!"
 $STD bash install.sh
 msg_ok "Installed ${APP}"
 
