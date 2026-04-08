@@ -6,6 +6,7 @@
 # Source: https://github.com/backupassure/proxmigrate
 
 source /dev/stdin <<<"$FUNCTIONS_FILE_PATH"
+APP="ProxMigrate"
 color
 verb_ip6
 catch_errors
